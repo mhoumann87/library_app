@@ -1,0 +1,23 @@
+/* Set variables for color and fonts */
+:root {
+  --white: #ebeef2;
+  --gray: #bfbbb4;
+  --brown: #594839;
+  --light-brown: #8c7968;
+  --black: #0d0d0d;
+  --font: 'Oswald', sans-serif;
+}
+
+/* Reset browser css */
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+/* Remove margin from body */
+body {
+  margin: 0;
+}
+
+/* Styles for the page */
