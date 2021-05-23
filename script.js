@@ -15,15 +15,18 @@ const showBooks = () => {
 
   list.innerHTML = '';
   for (let i = 0; i < books.length; i++) {
-    list.innerHTML += `<article class="card" <h2>${books[i].title}</h2> <p>${
+    list.innerHTML += `<article class="card"> <h2>${books[i].title}</h2> <p>${
       books[i].author
     }</p>  <span class="${books[i].read ? '' : 'red'}"> ${
       books[i].read ? 'Read' : 'Not Read'
     } </span>
+    <div class="button-box">
                       <button class="butRead" data-index="${i}">${
       books[i].read ? 'Not Read' : 'Read'
     } </button>
-                      <button class="removeBook" data-index="${i}">Remove book</button>`;
+                      <button class="removeBook" data-index="${i}">Remove book</button>
+                      </div>
+                      `;
   }
 };
 
